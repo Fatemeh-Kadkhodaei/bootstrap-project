@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<style>
+    .text-center {
+        padding-top: 150px;
+        padding-bottom: 150px;
+        background-color: aquamarine;
+        width: 100%;
+    }
+
+    .btn-one {
+        color: #fff;
+        border-radius: 5px;
+        position: relative;
+        background: #000;
+        transition: all 0.3s ease-in-out;
+    }
+
+   
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <img src="img/logo.png" alt="" style="width: 50px; height: 50px;">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Contact Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">About Us</a>
+                                </li>
+
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="row">
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                        <p>A well-known quote, contained in a blockquote element.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="contact-section-two text-start mt-80 lg-mt-60">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="form-style-three md-mb-60 wow fadeInLeft"
+                        style="visibility: visible; animation-name: fadeInLeft;">
+                        <form action="inc/contact.php" id="contact-form" data-toggle="validator" novalidate="true">
+                            <div class="messages"></div>
+                            <div class="row controls">
+                                <div class="col-12">
+                                    <div class="input-group-meta form-group mb-35">
+                                        <label class="d-block" for="">Name*</label>
+                                        <input type="text" placeholder="Rashed Kabir" name="name" required="required"
+                                            data-error="Name is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="input-group-meta form-group mb-40">
+                                        <label class="d-block" for="">Email*</label>
+                                        <input type="email" placeholder="demo@domain.com" name="email"
+                                            required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="input-group-meta form-group mb-30">
+                                        <textarea placeholder="Your message*" name="message" required="required"
+                                            data-error="Please,leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12"><button class="btn-one fw-500 w-100 text-uppercase fs-14 d-block">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div> <!-- /.form-style-three -->
+                </div>
+
+                <div class="col-xl-4 col-lg-5 ms-auto wow fadeInRight"
+                    style="visibility: visible; animation-name: fadeInRight;">
+                    <div class="address-block-three d-flex mb-70 lg-mb-40 mt-20">
+                        <div class="icon"><img src="images/icon/icon_161.svg" alt=""></div>
+                        <div class="text">
+                            <h5 class="title">Our Address</h5>
+                            <p>1012 Pebda Parkway, Mirpur 2 <br>Dhaka, Bangladesh</p>
+                        </div>
+                    </div> <!-- /.address-block-three -->
+                    <div class="address-block-three d-flex mb-70 lg-mb-40">
+                        <div class="icon"><img src="images/icon/icon_162.svg" alt=""></div>
+                        <div class="text">
+                            <h5 class="title">Contact Info</h5>
+                            <p>Open a chat or give us call at <br><a href="tel:310.841.5500"
+                                    class="call">310.841.5500</a></p>
+                        </div>
+                    </div> <!-- /.address-block-three -->
+                    <div class="address-block-three d-flex">
+                        <div class="icon"><img src="images/icon/icon_163.svg" alt=""></div>
+                        <div class="text">
+                            <h5 class="title">Live Support</h5>
+                            <p>Urgent go to live chat portal <br><a href="#" class="webaddress">www.supportlive.com</a>
+                            </p>
+                        </div>
+                    </div> <!-- /.address-block-three -->
+                </div>
+            </div>
+        </div> <!-- /.contact-section-two -->
+    </div>
+
+
+
+</body>
+
+</html>
